@@ -1,0 +1,17 @@
+{
+  "name": "personal-site",
+  "version": "0.0.1",
+  "desription": "Proyecto página web personal",
+  "bugs": {
+    "url": "https://github.com/raulabarca/personal-site/issues",
+    "email": "raulabarka@gmail.com"
+  },
+  "license": "MIT",
+  "author": "Raúl Abarca <raulabarka@gmail.com> | http://raulabarca.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raulabarca/personal-site"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
