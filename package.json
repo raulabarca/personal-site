@@ -6,12 +6,22 @@
     "url": "https://github.com/raulabarca/personal-site/issues",
     "email": "raulabarka@gmail.com"
   },
-  "license": "MIT",
-  "author": "Raúl Abarca <raulabarka@gmail.com> | http://raulabarca.com",
+  "license": "BSD-2-Clause",
+  "author": "Raúl Abarca <raulabarka@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/raulabarca/personal-site"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.1.0",
+    "gulp": "~3.9.1",
+    "gulp-connect": "~3.1.0",
+    "gulp-jade": "~1.1.0"
+  },
+  "description": "Proyecto de web personal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
