@@ -16,8 +16,8 @@
   "devDependencies": {
     "connect-history-api-fallback": "^1.1.0",
     "gulp": "~3.9.1",
-    "gulp-connect": "~3.1.0",
-    "gulp-jade": "~1.1.0"
+    "gulp-connect": "^3.1.0",
+    "gulp-jade": "^1.1.0"
   },
   "description": "Proyecto de web personal.",
   "main": "index.js",
