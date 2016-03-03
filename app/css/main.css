@@ -1,0 +1,76 @@
+ul li {
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.main {
+  width: 100%;
+  max-height: 600px;
+  height: auto !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("http://www.intrawallpaper.com/static/images/abstract-mosaic-background.png");
+  background-position: top center;
+  background-size: 100%;
+}
+#portfolio {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+}
+#portfolio ul li {
+  float: left;
+  text-align: center;
+}
+#down {
+  margin-left: -27px;
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+}
+.see-more {
+  position: absolute;
+  bottom: 35px;
+}
+.pointer {
+  cursor: pointer;
+}
+.logo {
+  text-align: center;
+  color: #fff;
+  padding-top: 15%;
+  padding-bottom: 200px;
+}
+.social ul li {
+  float: left;
+  margin-right: 23px;
+  text-align: center;
+}
+.social ul {
+  margin: auto;
+}
+.social {
+  height: 30px;
+  margin: auto;
+  width: 200px;
+  position: fixed;
+  right: 20px;
+  top: 3px;
+  color: #fff;
+}
+.mas {
+  float: right;
+  position: fixed;
+  top: 3px;
+  right: 3px;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
