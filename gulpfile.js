@@ -6,6 +6,10 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     historyApiFallback = require('connect-history-api-fallback'),
     stylus = require('gulp-stylus'),
+    gulpif = require('gulp-if'),
+    minifyCss = require('gulp-minify-css'),
+    useref = require('gulp-useref'),
+    uglify = require('gulp-uglify'),
     nib = require('nib');
 
 
@@ -51,6 +55,23 @@ gulp.task('watch', function() {
   gulp.watch(['./app/**/*.styl'], ['css']);
   gulp.watch(['./app/**/*.jade'], ['jade']);
 });
+
+// Production files
+gulp.task('compress', function() {
+  gulp.src('./app/index.html')
+    .pipe(useref.assets())
+    .pipe(gulpif('*.js', uglify({mangle: false})))
+    .pipe(gulpif('*.css', minifiCss()))
+    .pipe(gulp.dest('./dist'));
+});
+gulp.task('copy', function() {
+  gulp.src('./app/index.html')
+    .pipe(useref())
+    .pipe(gulp.dest('./dist'));
+  gulp.src('.app/fonts/**')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+gulp.task('build', ['compress', 'copy']);
 
 // Default task
 gulp.task('default',['server', 'watch']);
