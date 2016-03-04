@@ -17,17 +17,31 @@ a:hover
   padding: 0
   border: 0
   background-image: url(http://www.intrawallpaper.com/static/images/abstract-mosaic-background.png)
-  background-position: top center
+  background-position: top center no-repeat
   background-size: 100%
+  background-repeat: no-repeat
 
 #portfolio
   position: absolute
-  bottom: -100px
+  bottom: -300px
   width: 100%
+  margin-bottom: 20px
+
+  @media screen and (max-width: 768px)
+    position: relative
 
 #portfolio ul li
   float: left
   text-align: center
+
+.exemple
+  padding: 0 0 5px
+  margin: 60px
+  width: 250px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+
+  @media screen and (max-width: 768px)
+    margin: 10px
 
 #down
   margin-left: -27px
@@ -60,16 +74,20 @@ h1
 .social
   height: 30px
   margin: auto
-  width: 200px
+  width: 150px
   position: fixed
-  right: 20px
-  top: 3px
+  right: 15px
+  top: 5px
   color: #fff
 
 .mas
   float: right
   position: fixed
-  top: 3px
-  right: 3px
+  top: 5px
+  right: 5px
   color: #fff
-  text-shadow: 1px 1px #000
+
+#footer
+  height: 50px
+  text-align: center
+  margin-top: 200px
