@@ -11,5 +11,13 @@ var downscroll = function(){
     }, 2000);
   });
 }
+var linkblank = function(){
+  $(".external").click(function() {
+     url = $(this).attr("onclick");
+     window.open(url, '_blank');
+     return false;
+  });
+};
+$(document).ready(linkblank);
 $(document).ready(downscroll);
 $(document).ready(fadesocial);
