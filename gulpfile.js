@@ -10,6 +10,10 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css'),
     useref = require('gulp-useref'),
     uglify = require('gulp-uglify'),
+    cleanCSS = require('gulp-clean-css'),
+    minify = require('gulp-minify'),
+    gutil = require('gulp-util'),
+    eol = require('gulp-eol'),
     nib = require('nib');
 
 
@@ -23,6 +27,16 @@ gulp.task('server', function() {
     middleware: function(connect, opt) {
       return [historyApiFallback()];
     }
+  });
+});
+
+// Production server
+gulp.task('server-dist', function() {
+  connect.server({
+    root: './dist/',
+    hostname: '0.0.0.0',
+    port: 8080,
+    livereload: true,
   });
 });
 
@@ -57,20 +71,20 @@ gulp.task('watch', function() {
 });
 
 // Production files
-gulp.task('compress', function() {
-  gulp.src('./app/index.html')
-    .pipe(useref.assets())
-    .pipe(gulpif('*.js', uglify({mangle: false})))
-    .pipe(gulpif('*.css', minifiCss()))
-    .pipe(gulp.dest('./dist'));
+gulp.task('compress', function () {
+    return gulp.src('app/*.html')
+        .pipe(useref())
+        .pipe(gulpif('*.css', minifyCss()))
+        .pipe(gulp.dest('dist'));
 });
-gulp.task('copy', function() {
-  gulp.src('./app/index.html')
-    .pipe(useref())
-    .pipe(gulp.dest('./dist'));
-  gulp.src('.app/fonts/**')
-    .pipe(gulp.dest('./dist/fonts'));
+
+gulp.task('copy',	function()	{
+		gulp.src('./app/fonts/**')
+				.pipe(gulp.dest('./dist/fonts'));
+    gulp.src('./app/img/**')
+        .pipe(gulp.dest('./dist/img'));
 });
+
 gulp.task('build', ['compress', 'copy']);
 
 // Default task
