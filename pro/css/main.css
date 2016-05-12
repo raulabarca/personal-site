@@ -1,0 +1,130 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+    color: #fff !important;
+}
+.main {
+  width: 100%;
+  max-height: 600px;
+  height: auto !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("http://raulabarca.com/img/background.png");
+  background-position: top center no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#down {
+  text-align: center;
+  position: absolute;
+  bottom: 45px;
+  color: #fff;
+  width: 100%;
+}
+.logo h1 {
+  font-size: 50px !important;
+  font-family: raleway;
+}
+.portfolio{
+    margin-bottom: -5;
+    font-family: raleway;
+}
+.pointer {
+  cursor: pointer;
+}
+.logo {
+  text-align: center;
+  color: #fff;
+  padding-top: 15%;
+  padding-bottom: 200px;
+}
+.social ul li {
+  float: left;
+  margin-right: 23px;
+  text-align: center;
+}
+.social ul {
+  margin: auto;
+}
+.social {
+  height: 30px;
+  margin: auto;
+  width: 136px;
+  position: fixed;
+  right: 33px;
+  top: 10px;
+  color: #fff;
+  z-index: 9;
+}
+.mas {
+  float: right;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  z-index: 9;
+}
+#footer {
+  height: 50px;
+  text-align: center;
+  margin-top: 200px;
+  clear: both;
+}
+.resume{
+    color: #fff;
+    font-size: 30px;
+    font-family: raleway;
+    margin-top: 40px;
+}
+.resume h4{
+    font-size: 35px;
+}
+@media only screen and (max-width: 1330px){
+    .mobile{
+        display: none;
+    }
+    ul li img{
+        width: 100%;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 991px){
+    ul{
+        text-align: center;
+    }
+    .mobile{
+        display: inline;
+    }
+}
+@media only screen and (max-width: 663px){
+    .mobile{
+        display: none;
+    }
+    .resume{
+        font-size: 20px;
+    }
+    .resume h4{
+        font-size: 22px;
+    }
+    .img-section{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}

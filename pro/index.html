@@ -1,0 +1,109 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>raúlabarca</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web personal de Raúl Abarca">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://raulabarca.com/favicon.png" type="image/x-icon">
+    <!--CSS References-->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!--JavaScript References-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#C8CE60', '#4fd3b8', '#74d19d', '#0dafd4', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000,
+                scrollBar:true
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="plus"> <!-- Social Links -->
+      <div class="mas"><i class="fa fa-plus pointer fa-2x"></i></div>
+      <div class="social">
+        <ul>
+          <li> <i onclick="http://twitter.com/stupendoman" class="fa fa-twitter pointer fa-2x external"></i></li>
+          <li> <i onclick="http://github.com/raulabarca" class="fa fa-github pointer fa-2x external"></i></li>
+        </ul>
+      </div>
+    </div> <!-- End Social Links -->
+<div id="fullpage">
+     <div class="section">
+         <div class="main">
+             <div class="logo">
+                 <h1> <b>raúl</b>abarca             </h1>
+             </div>
+         </div>
+         <div id="down" ><p class="portfolio">Portfolio</p><p><a href="index.html#secondPage"><i class="fa fa-angle-down fa-3x pointer"></i></a></p></div>
+     </div>
+     <div class="section">
+         <ul class="img-section col-md-6" >
+             <li>
+                 <div onclick="http://www.mimiandtara.com" class="pointer external"><img src="img/mimiandtara-macbook.png" style="max-width:500px;">
+                 </div>
+            </li>
+            <li>
+                 <div onclick="http://www.mimiandtara.com" class="pointer external mobile"><img src="img/mimiandtara-iphone.png" style="max-width:130px;">
+                 </div>
+            </li>
+         </ul>
+         <div class="resume col-md-6">
+             <h4><a href="http://www.mimiandtara.com/"><b>Mimi & Tara</b></a></h4>
+             <p>Desarrollo web integral:</p>
+             <p>theme responsive para wordpress creado desde cero con bootstrap y jQuery. Imagen corporativa. SEO</p>
+         </div>
+     </div>
+     <div class="section">
+         <ul class="img-section col-md-6" >
+             <li>
+                 <div onclick="http://www.theowlsremedies.com" class="pointer external"><img src="img/theowlsremedies-macbook.png" style="max-width:500px;">
+                 </div>
+            </li>
+            <li>
+                 <div onclick="http://www.theowlsremedies.com" class="pointer external mobile"><img src="img/theowlsremedies-iphone.png" style="max-width:130px;">
+                 </div>
+            </li>
+         </ul>
+         <div class="resume col-md-6">
+             <h4><a href="http://www.theowlsremedies.com/"><b>The Owl's Remedies</b></a></h4>
+             <p>Desarrollo web integral:</p>
+             <p>theme responsive para wordpress creado desde cero con bootstrap y jQuery. Imagen corporativa. SEO</p>
+         </div>
+     </div>
+     <div class="section">
+         <ul class="img-section col-md-6" >
+             <li>
+                 <div onclick="http://github.com/raulabarca/ad-shortcode" class="exemple pointer external"><img src="img/wordpress-adsense-plugin.png" style="max-width:500px; margin-left:20px;">
+                 </div>
+             </li>
+         </ul>
+         <div class="resume col-md-6">
+             <h4><a href="https://github.com/raulabarca/ad-shortcode"><b>Simply Adsense</b></a></h4>
+             <p>Desarrollo de plugin para Wordpress. Plugin que mediante un shortcode muestra tu anuncio de Adsense dentro de los posts.</p>
+         </div>
+     </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2472796-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
